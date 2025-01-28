@@ -12,7 +12,8 @@
 
 .row{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 15px;
 }
 
 .col-6{
@@ -22,5 +23,5 @@
 
 .col-3{
     width: 25%;
-    padding: 0p 15px;
+    padding: 0 15px;
 }

@@ -1,9 +1,16 @@
-
+import CategoryComponent from "../../components/CategoryCompnent/CategoryComponent";
+import { useSelector } from 'react-redux';
 
 const Home = () => {
+    const categories = useSelector(s => s.reducer.categories);
     return (
         <div>
-            <h1>home</h1>
+            {
+                categories.map(item=>{
+                    return <CategoryComponent limit={4} category={item} />
+                })
+            }
+
         </div>
     );
 }
